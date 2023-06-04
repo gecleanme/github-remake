@@ -1,0 +1,560 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>GitHub Remake</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+<div class="text-gray-900 text-sm">
+  <nav class="bg-gray-900 text-white flex items-center justify-between px-4 py-3">
+    <!-- Left Subnav   -->
+    <div class="flex items-center space-x-4">
+      <a href="#" class="text-white hover:text-gray-400">
+        <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-8 fill-current">
+          <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+        </svg>
+      </a>
+
+      <div class="relative">
+        <input type="text" name="" id="" class="hidden lg:flex rounded bg-gray-700 placeholder-white w-70 px-3 py-1" placeholder="Search"/>
+      </div>
+
+      <ul class="flex text-white items-center space-x-4 hidden lg:flex">
+        <li class="hover:text-gray-400">Pull Requests</li>
+        <li class="hover:text-gray-400">Codespaces</li>
+        <li class="hover:text-gray-400">Marketplace</li>
+        <li class="hover:text-gray-400">Issues</li>
+
+      </ul>
+
+    </div>
+    <!-- Left Subnav ends   -->
+    <!-- Right Subnav    -->
+    <div class="flex items-center space-x-4">
+      <a href="#" class="relative text-white hover:text-gray-400">
+        <svg aria-hidden="true" viewBox="0 0 16 16"  data-view-component="true" class="w-4 fill-current">
+          <path d="M8 16a2 2 0 0 0 1.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 0 0 8 16ZM3 5a5 5 0 0 1 10 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.519 1.519 0 0 1 13.482 13H2.518a1.516 1.516 0 0 1-1.263-2.36l1.703-2.554A.255.255 0 0 0 3 7.947Zm5-3.5A3.5 3.5 0 0 0 4.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.017.017 0 0 0-.003.01l.001.006c0 .002.002.004.004.006l.006.004.007.001h10.964l.007-.001.006-.004.004-.006.001-.007a.017.017 0 0 0-.003-.01l-1.703-2.554a1.745 1.745 0 0 1-.294-.97V5A3.5 3.5 0 0 0 8 1.5Z"></path>
+        </svg>
+      </a>
+
+      <a href="#" class="flex items-center hover:text-gray-400">
+        <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16" data-view-component="true" class="w-4 fill-current">
+          <path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path>
+        </svg>
+      </a>
+
+      <a href="#" class="flex items-center hover:text-gray-400">
+        <img src="https://avatars.githubusercontent.com/u/130738860?s=40&amp;v=4" alt="@gecleanme" size="20" height="20" width="20" data-view-component="true" class="rounded-full">
+      </a>
+
+
+
+    </div>
+    <!-- Right Subnav ends   -->
+
+  </nav>
+    <!--Meta Start -->
+  <div class="bg-gray-200 flex items-center justify-between px-8 py-4 flex-col space-y-4 lg:flex-row lg:space-y-0">
+    <div class="flex  lg:space-y-0">
+    <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="mr-2 w-4 text-gray-600 fill-current">
+      <path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.249.249 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z"></path>
+    </svg>
+
+      <div class="flex items-center text-xl ml-2">
+        <a href="#" class="text-blue-600 hover:underline"> laravel </a>
+        <span class="text-blue-600 ml-1">/</span>
+        <a href="#" class="text-blue-600 font-semibold ml-2 hover:underline"> laravel </a>
+
+      </div>
+    </div>
+
+    <div class=" flex space-x-2">
+
+      <div class="flex text-xs">
+        <button class="rounded rounded-r-none flex space-x-1 items-center border border-gray-400 border-r-none px-3 py-1">
+          <svg aria-hidden="true"  viewBox="0 0 16 16" data-view-component="true" class="w-4 fill current text-gray-600">
+            <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
+          </svg>
+          <span>Watch</span>
+        </button>
+
+        <a class="text-gray-600 px-3 py-1 border-gray-400 rounded rounded-l-none border border-l-0 font-semibold hover:text-blue-600 cursor-pointer">1.1k</a>
+      </div>
+      <div class="flex text-xs">
+        <button class="rounded rounded-r-none flex space-x-1 items-center border border-gray-400 border-r-none px-3 py-1">
+          <svg aria-hidden="true"  viewBox="0 0 16 16" data-view-component="true" class="w-4 fill current text-gray-600">
+            <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+          </svg>
+          <span>Star</span>
+        </button>
+
+        <a class="text-gray-600 px-3 py-1 border-gray-400 rounded rounded-l-none border border-l-0 font-semibold hover:text-blue-600 cursor-pointer">1.1k</a>
+      </div>
+      <div class="flex text-xs">
+        <button class="rounded rounded-r-none flex space-x-1 items-center border border-gray-400 border-r-none px-3 py-1">
+          <svg aria-hidden="true"  viewBox="0 0 16 16" data-view-component="true" class="w-4 fill current text-gray-600">
+            <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path>          </svg>
+          <span>Fork</span>
+        </button>
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+    <!--Meta end -->
+
+  <!--  Tabs Start     -->
+
+    <ul class="flex items-center space-x-2 border-b border-gray-200 px-8 mt-4">
+      <li>
+        <a class="border-b-2 border-red-500 font-semibold px-4 py-4 pb-2 flex space-x-2">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-600">
+            <path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L13.94 8l-3.72-3.72a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215Zm-6.56 0a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L2.06 8l3.72 3.72a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L.47 8.53a.75.75 0 0 1 0-1.06Z"></path>
+          </svg>
+          <span class="ml-2">Code</span>
+
+        </a>
+      </li>
+
+      <li>
+        <a class="border-b-2 border-transparent  px-4 py-4 pb-2 flex space-x-2 hover:border-gray-400 items-center">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-600">
+            <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"></path>
+
+          </svg>
+          <span class="ml-2">Issues</span>
+          <span class="bg-gray-200 rounded px-1 py-1">255</span>
+
+        </a>
+      </li>
+
+
+      <li class="hidden lg:block">
+        <a class="border-b-2 border-transparent  px-4 py-4 pb-2 flex space-x-2 hover:border-gray-400 items-center">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-600">
+            <path d="M1.5 3.25a2.25 2.25 0 1 1 3 2.122v5.256a2.251 2.251 0 1 1-1.5 0V5.372A2.25 2.25 0 0 1 1.5 3.25Zm5.677-.177L9.573.677A.25.25 0 0 1 10 .854V2.5h1A2.5 2.5 0 0 1 13.5 5v5.628a2.251 2.251 0 1 1-1.5 0V5a1 1 0 0 0-1-1h-1v1.646a.25.25 0 0 1-.427.177L7.177 3.427a.25.25 0 0 1 0-.354ZM3.75 2.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm0 9.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm8.25.75a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Z"></path>
+
+          </svg>
+          <span class="ml-2">Pull Requests</span>
+          <span class="bg-gray-200 rounded px-1 py-1">255</span>
+
+        </a>
+      </li>
+
+
+      <li class="hidden lg:block">
+        <a class="border-b-2 border-transparent  px-4 py-4 pb-2 flex space-x-2 hover:border-gray-400 items-center">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-600">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm4.879-2.773 4.264 2.559a.25.25 0 0 1 0 .428l-4.264 2.559A.25.25 0 0 1 6 10.559V5.442a.25.25 0 0 1 .379-.215Z"></path>
+          </svg>
+          <span class="ml-2">Actions</span>
+
+        </a>
+      </li>
+
+
+      <li class="hidden lg:block">
+        <a class="border-b-2 border-transparent  px-4 py-4 pb-2 flex space-x-2 hover:border-gray-400 items-center">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-600">
+            <path d="M7.467.133a1.748 1.748 0 0 1 1.066 0l5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667Zm.61 1.429a.25.25 0 0 0-.153 0l-5.25 1.68a.25.25 0 0 0-.174.238V7c0 1.358.275 2.666 1.057 3.86.784 1.194 2.121 2.34 4.366 3.297a.196.196 0 0 0 .154 0c2.245-.956 3.582-2.104 4.366-3.298C13.225 9.666 13.5 8.36 13.5 7V3.48a.251.251 0 0 0-.174-.237l-5.25-1.68ZM8.75 4.75v3a.75.75 0 0 1-1.5 0v-3a.75.75 0 0 1 1.5 0ZM9 10.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z"></path>
+          </svg>
+          <span class="ml-2">Security</span>
+
+        </a>
+      </li>
+
+
+      <li class="hidden lg:block">
+        <a class="border-b-2 border-transparent  px-4 py-4 pb-2 flex space-x-2 hover:border-gray-400 items-center">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-600">
+            <path d="M1.5 1.75V13.5h13.75a.75.75 0 0 1 0 1.5H.75a.75.75 0 0 1-.75-.75V1.75a.75.75 0 0 1 1.5 0Zm14.28 2.53-5.25 5.25a.75.75 0 0 1-1.06 0L7 7.06 4.28 9.78a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042l3.25-3.25a.75.75 0 0 1 1.06 0L10 7.94l4.72-4.72a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042Z"></path>
+          </svg>
+          <span class="ml-2">Insights</span>
+          <span class="bg-gray-200 rounded px-1 py-1">255</span>
+
+        </a>
+      </li>
+
+
+    </ul>
+
+  <!-- Tabs End -->
+
+  <!-- File Tree  -->
+
+
+
+
+  <div class="container mx-auto my-8 px-4 flex flex-col mb-2 lg:flex-row">
+
+    <div class="w-full lg:w-3/4 lg:mr-8">
+
+      <div class="flex items-center justify-between">
+        <div class="flex text-xs space-x-2">
+          <button class="rounded-md rounded-r-none flex space-x-1 items-center border border-gray-400 border-r-none px-3 py-1">
+            <svg aria-hidden="true"  viewBox="0 0 16 16" data-view-component="true" class="w-4 fill current text-gray-600">
+              <path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path>
+            </svg>
+            <span>Master</span>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+
+
+
+          </button>
+
+          <button class="flex space-x-1 items-center px-3 py-1 hidden lg:flex">
+
+            <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-git-branch">
+              <path d="M9.5 3.25a2.25 2.25 0 1 1 3 2.122V6A2.5 2.5 0 0 1 10 8.5H6a1 1 0 0 0-1 1v1.128a2.251 2.251 0 1 1-1.5 0V5.372a2.25 2.25 0 1 1 1.5 0v1.836A2.493 2.493 0 0 1 6 7h4a1 1 0 0 0 1-1v-.628A2.25 2.25 0 0 1 9.5 3.25Zm-6 0a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm8.25-.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5ZM4.25 12a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path>
+            </svg>
+            <span>255 Branches</span>
+
+
+          </button>
+
+          <button class="flex space-x-1 items-center px-3 py-1 hidden lg:flex">
+
+
+            <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16"  width="16" data-view-component="true" class="">
+              <path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path>
+            </svg>
+
+            <span>255 Tags</span>
+
+
+          </button>
+
+
+        </div>
+
+        <div class="flex space-x-3 items-center">
+
+
+          <button class=" hidden lg:block bg-gray-200 rounded flex space-x-1 items-center border border-gray-200 px-3 py-1">
+            <span>Go to file</span>
+
+
+          </button>
+
+
+
+
+          <button class="hidden lg:flex bg-green-600 rounded text-white flex space-x-1 items-center border border-green-500 px-3 py-1">
+            <span>Code</span>
+
+
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+            </svg>
+
+
+
+          </button>
+
+
+        </div>
+
+      </div>
+        <!--  Commit history start     -->
+      <div class="container bg-blue-100 flex items-center justify-between border border-gray-300 border-b-0 rounded-md rounded-b-none mt-5 py-4">
+        <div class="ml-4 flex items-center space-x-2 text-sm">
+          <img src="https://avatars.githubusercontent.com/u/463230?s=48&amp;v=4" alt="@taylorotwell" class="rounded-full hover:cursor-pointer" width="24" height="24">
+          <span class="font-semibold hover:text-blue-600 cursor-pointer">taylorotwell</span>
+          <span>Updated Description</span>
+
+        </div>
+        <div class="mr-4 flex items-center space-x-2 text-sm">
+
+          <svg aria-label="3 / 3 checks OK" role="img" height="16" viewBox="0 0 16 16" width="16" data-view-component="true" class=" hidden lg:block">
+            <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+          </svg>
+
+          <span class=" hidden lg:flex">
+            85203d6
+          </span>
+
+          <span class=" hidden lg:flex">2 days ago</span>
+
+            <svg text="gray" aria-hidden="true" viewBox="0 0 16 16"  data-view-component="true" class="w-4 ">
+              <path d="m.427 1.927 1.215 1.215a8.002 8.002 0 1 1-1.6 5.685.75.75 0 1 1 1.493-.154 6.5 6.5 0 1 0 1.18-4.458l1.358 1.358A.25.25 0 0 1 3.896 6H.25A.25.25 0 0 1 0 5.75V2.104a.25.25 0 0 1 .427-.177ZM7.75 4a.75.75 0 0 1 .75.75v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5A.75.75 0 0 1 7.75 4Z"></path>
+            </svg>
+
+          <span class="font-semibold"> <span class="font-semibold"> 6,899</span> <span class="font-normal">commits</span> </span>
+
+        </div>
+      </div>
+        <!-- Commit history end -->
+
+      <div class="container flex items-center justify-between rounded-md rounded-b-0 border border-b-1 border-t-0 border-l-0 border-r-0 border-gray-200 mt-2 px-2 py-2">
+        <div class="flex items-center space-x-2 text-sm">
+          <svg class="w-4 fill-current text-gray-500" aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" >
+            <path d="M1.75 1A1.75 1.75 0 0 0 0 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0 0 16 13.25v-8.5A1.75 1.75 0 0 0 14.25 3H7.5a.25.25 0 0 1-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75Z"></path>
+          </svg>
+          <span>Folder</span>
+        </div>
+        <div class=" hidden lg:flex">
+          Add hashed cast to user password
+        </div>
+        <div>3 weeks ago</div>
+
+      </div>
+      <div class="container flex items-center justify-between rounded-md rounded-b-0 border border-b-1 border-t-0 border-l-0 border-r-0 border-gray-200 mt-2 px-2 py-2">
+        <div class="flex items-center space-x-2 text-sm">
+          <svg class="w-4 fill-current text-gray-500" aria-label="Directory" aria-hidden="true" height="16" viewBox="0 0 16 16" >
+            <path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"></path>
+          </svg>
+          <span>File</span>
+        </div>
+        <div class=" hidden lg:flex">
+          Update Example
+        </div>
+        <div>5 months ago</div>
+
+      </div>
+
+
+
+    </div>
+
+    <div class="w-full lg:w-1/4 flex flex-col justify-between space-y-6">
+
+      <div class="text-xl mt-6 lg:mt-0">About</div>
+      <div> Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+        Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+        Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+        Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem
+      </div>
+
+      <div class="flex space-x-1 mt-2">
+        <svg aria-hidden="true"  viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current text-gray-500 flex-shrink-0 mr-2">
+          <path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path>
+        </svg>
+        <span class="text-blue-600 font-semibold"> laravel.com </span>
+      </div>
+      <div class="flex space-x-2 items-center container font-semibold mb-4">
+        <span class="bg-gray-200 rounded px-2 py-2 text-blue-600">php</span>
+        <span class="bg-gray-200 rounded px-2 py-2 text-blue-600">framework</span>
+        <span class="bg-gray-200 rounded px-2 py-2 text-blue-600">open source</span>
+      </div>
+
+
+      <div class="flex text-gray-500 mt-4 group">
+        <div class="flex items-center space-x-2 group-hover:text-blue-600 cursor-pointer">
+          <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current mr-2">
+            <path d="M0 1.75A.75.75 0 0 1 .75 1h4.253c1.227 0 2.317.59 3 1.501A3.743 3.743 0 0 1 11.006 1h4.245a.75.75 0 0 1 .75.75v10.5a.75.75 0 0 1-.75.75h-4.507a2.25 2.25 0 0 0-1.591.659l-.622.621a.75.75 0 0 1-1.06 0l-.622-.621A2.25 2.25 0 0 0 5.258 13H.75a.75.75 0 0 1-.75-.75Zm7.251 10.324.004-5.073-.002-2.253A2.25 2.25 0 0 0 5.003 2.5H1.5v9h3.757a3.75 3.75 0 0 1 1.994.574ZM8.755 4.75l-.004 7.322a3.752 3.752 0 0 1 1.992-.572H14.5v-9h-3.495a2.25 2.25 0 0 0-2.25 2.25Z"></path>
+          </svg>
+
+          <span>Readme</span>
+
+        </div>
+      </div>
+
+
+      <!--  Releases  -->
+      <div class="flex flex-col space-y-4  border border-t-1 border-b-0 border-r-0 border-l-0 border-gray-300 px-4 py-6">
+
+        <div class="flex space-x-1 items-center">
+          <div class="text-xl font-semibold">Releases</div>
+          <div> <a href="#" class="px-2 py-1 text-center bg-gray-200 rounded-full text-xs">179</a></div>
+        </div>
+
+        <div class="flex  space-x-2">
+          <div class="text-green-600">
+            <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="flex-shrink-0 mt-1 w-4 fill-current">
+              <path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.752 1.752 0 0 1 1 7.775Zm1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2Z"></path>
+            </svg>
+          </div>
+          <div class="text-black font-semibold">v10.2.1</div>
+          <div>
+
+            <a href="#" class="text-green-600 font-semibold py-1 px-2 border border-green-700 rounded-full text-xs">Latest</a>
+
+          </div>
+
+
+        </div>
+
+        <div class="text-blue-600 font-base hover:underline">+ 142 releases</div>
+
+
+      </div>
+
+      <!--  Contributors     -->
+      <div class="flex flex-col space-y-4  border border-t-1 border-b-0 border-r-0 border-l-0 border-gray-300 px-4 py-6">
+
+        <div class="flex space-x-1 items-center">
+          <div class="text-xl font-semibold">Contributors</div>
+          <div> <a href="#" class="px-2 py-1 text-center bg-gray-200 rounded-full text-[12px]">700</a></div>
+
+        </div>
+
+
+        <div class="flex items-center  space-x-2 space-y-4">
+
+          <img src="https://avatars.githubusercontent.com/u/463230?s=64&amp;v=4" alt="@taylorotwell" size="32" data-view-component="true" class="rounded-full mt-4" width="32" height="32">
+          <img src="https://avatars.githubusercontent.com/u/463230?s=64&amp;v=4" alt="@taylorotwell" size="32" data-view-component="true" class="rounded-full" width="32" height="32">
+          <img src="https://avatars.githubusercontent.com/u/463230?s=64&amp;v=4" alt="@taylorotwell" size="32" data-view-component="true" class="rounded-full" width="32" height="32">
+          <img src="https://avatars.githubusercontent.com/u/463230?s=64&amp;v=4" alt="@taylorotwell" size="32" data-view-component="true" class="rounded-full" width="32" height="32">
+
+
+        </div>
+
+        <div class="text-blue-600 font-base hover:underline">+ 685 contributors</div>
+
+
+
+      </div>
+
+      <!--  Languages     -->
+      <div class="flex flex-col space-y-4  border border-t-1 border-b-0 border-r-0 border-l-0 border-gray-300 px-4 py-6">
+
+        <div class="flex space-x-1 items-center">
+          <div class="text-xl font-semibold">Languages</div>
+
+        </div>
+
+        <div class="flex items-center mx-0">
+
+        <div class="w-11/12 bg-blue-600 px-1 py-1 rounded-md rounded-r-none"></div>
+        <div class="w-1/12 bg-red-600 px-1 py-1 rounded-md  rounded-l-none"></div>
+        </div>
+
+        <ul class="flex items-center space-x-8">
+          <li class="flex items-center space-x-2">
+            <span class="w-1 bg-blue-600 rounded-full px-1 py-1"></span>
+            <span>PHP</span>
+          </li>
+          <li class="flex items-center space-x-2">
+            <span class="w-1 bg-red-600 rounded-full px-1 py-1"></span>
+
+            <span>Blade</span>
+          </li>
+        </ul>
+
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+
+    <!-- File Tree End  -->
+
+
+  <div class="mx-auto border border-gray-200 container w-full lg:w-3/4  mt-4 text-xl py-4 px-2 ml-4 rounded">
+
+    <div class="flex space-x-2">
+
+      <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="w-4 fill-current">
+        <path d="M5.75 2.5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5Zm0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5ZM2 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-6a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM2 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path>
+      </svg>
+
+      <span class="font-semibold text-base">Readme.md</span>
+    </div>
+
+    <div class="ml-4 mt-4 lg:ml-0">Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa dolore ea facere harum incidunt ipsam laborum, minima omnis optio saepe, sit vero. Ab aliquid at cupiditate facere facilis quidem.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusantium asperiores at atque blanditiis cumque, expedita facere, harum hic iste laudantium minima modi molestiae nihil non obcaecati odit officiis quae quia quidem recusandae reiciendis sit voluptas voluptatibus voluptatum? Adipisci autem corporis cupiditate deleniti fugit id, mollitia numquam optio quas, quis quisquam quo totam, voluptas voluptate voluptatum. Aliquid doloribus earum excepturi, fugit iure sit vel. Ab corporis, deserunt dolorum excepturi harum, labore libero modi necessitatibus nulla odit qui sit totam? Accusantium, ad aliquam aperiam assumenda consequuntur dolor dolorem dolorum ea eaque eligendi, eveniet ex facilis fugiat illum impedit incidunt ipsa maiores minus molestiae natus nostrum nulla odio omnis pariatur perferendis placeat porro praesentium quae qui, quibusdam quo reprehenderit rerum sit soluta tenetur vero voluptas! Culpa debitis dicta eaque fugiat itaque laboriosam, mollitia natus nobis possimus provident qui sequi sit, ut velit veritatis vitae voluptas voluptate voluptatibus! A ad architecto, culpa cum delectus, deserunt, earum iure maxime minima molestias nam officiis perferendis repudiandae rerum sit veniam vero. Ab asperiores dignissimos, dolorum et, fugiat fugit, id incidunt necessitatibus nobis quis quod similique soluta tenetur voluptate voluptates! Blanditiis consequuntur dicta doloribus, dolorum eligendi fugit libero maxime nostrum quam ratione sint soluta totam ut vitae?
+
+    </div>
+
+  </div>
+  <!-- Readme end  -->
+
+
+
+</div>
+
+<footer class="flex items-center justify-between px-4 py-6 border border-t-1 border-gray-200 mt-8 text-sm">
+  <div class="flex space-x-8 text-gray-500">
+    <svg aria-hidden="true" viewBox="0 0 16 16" data-view-component="true" class="hidden lg:flex w-4 fill-current">
+      <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+    </svg>
+    <span class="flex items-center">&copy 2023 GitHub, Inc</span>
+    <ul class="flex flex-wrap space-x-4 space-y-4 lg:space-x-12 lg:flex-nowrap lg:space-y-0">
+      <li class=" mt-4 ml-2 lg:mt-0 lg:ml-0">
+        <a href="#" class="text-blue-600">Terms</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Privacy</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Contact GitHub</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">API</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Pricing</a>
+      </li>
+
+
+      <li>
+        <a href="#" class="text-blue-600">Docs</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Training</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Blog</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">About</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Status</a>
+      </li>
+
+      <li>
+        <a href="#" class="text-blue-600">Security</a>
+      </li>
+
+    </ul>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
