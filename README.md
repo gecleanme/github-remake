@@ -1,9 +1,11 @@
-# github-remake
-- Static elements only 
+# GitHub Remake
+- Static elements only
 - Repo Landing Page Only
+- Responsive Design
 
-## Preview Steps:
-- Download & Visit index.html
+## Preview
+
+https://gecleanme.github.io/github-remake/
 
 ## Built with
 - TailwindCSS
